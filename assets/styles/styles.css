@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'thuphap1';
-    src: url('/assets/fonts/HL-thufap1-Unicode.ttf')
+    src: url('../fonts/HL-thufap1-Unicode.ttf')
 }
 
 /*global*/
@@ -8,7 +8,7 @@ body, nav {
     font-family: "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
-    background: url('/assets/img/old-page-bg.jpg');
+    background: url('../img/old-page-bg.jpg');
 }
 
 ul {
@@ -36,7 +36,7 @@ li {
 }
 
 .wraper-bg {
-    background: linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('/assets/img/khue-van-cac-main.jpg');
+    background: linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('../img/khue-van-cac-main.jpg');
     background-size: cover;
  
     background-position: center;
@@ -92,7 +92,7 @@ li {
 }
 
 .desktop-nav-wraper {
-    background: url('/assets/img/old-style-nav.png') top center no-repeat;
+    background: url('../img/old-page-bg.jpg') top center no-repeat;
     height: 100%;
     display: block;
     width: 100%;
