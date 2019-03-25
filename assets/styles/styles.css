@@ -29,6 +29,98 @@ li {
 } */
 
 /* header */
+nav {
+    /* background: rgba(255,255,255,0.8); */
+    background: rgba(0,0,0,0.8);
+}
+
+@font-face {
+    font-family: 'thuphap1';
+    src: url('../fonts/HL-thufap1-Unicode.ttf')
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-area a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+}
+
+.logo {
+    width: 75px;
+
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu-bar {
+    color: #000;
+    align-self: center;
+}
+
+nav.nav-desktop ul {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    list-style-type: none;
+}
+
+nav.nav-desktop ul li a {
+    
+    font-family: 'thuphap1';
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    transition: .5s;
+    width: 100px;
+}
+
+nav.nav-desktop ul.main-nav li a:hover {
+    background-image: url('../img/resources/box.png');
+    /* background: rgba(223, 158, 18, 0.815); */
+    color: red;
+    transition: .5s;
+    text-decoration: none;
+}
+.menu-trigger {
+    display: none;
+    margin-right: 1.5em;
+    /* background: rgb(247, 182, 1); */
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.web-name {
+    color: #fff;
+}
+
+    /*header bg */
+
 .page-wraper {
     width: 1000px;
     margin: 0 auto;
@@ -41,6 +133,8 @@ li {
  
     background-position: center;
 }
+
+
 
 /*.wraper-bsg::before {
     content: '';
@@ -231,10 +325,23 @@ li {
 /*main */
 .golden-rank {
     margin-top: 60px;
-    border: 2px double red;
     position: relative;
-    height: 500px;
+    /* height: 500px; */
+    /* background-image: url('../img/bang-vang/old-paper-with-patterned-vintage-frame-blank-your-design_1484-600.jpg');
+    background-size: cover */
+    background-color: rgb(254, 243, 221);
+    border: 3px double red;
+    border-radius: 20px;
+    border-spacing: 10pt 5pt;
 }
+/* .golden-rank::before{
+    content: '';
+    border: 1px solid red;
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+} */
+
 .king-paper {
     width: 300px;
     height: 120px;
@@ -257,9 +364,36 @@ li {
     height: 100%;
 }
 
+/* user-rank*/
+
 .user-rank {
     margin-top: 80px;
+    padding: 10px;
 }
+
+.user-rank table {
+    width: 100%;
+    text-align: center;
+}
+
+.user-rank table th {
+    height: 40px;
+    background: rgb(242, 231, 211);
+
+}
+
+.user-rank table td {
+    height: 30px;
+}
+
+.user-rank tr:nth-child(2n) {
+    background: rgb(242, 231, 211);
+}
+
+.user-rank tr:last-child {
+    border-radius: 20px;
+}
+
 
 /* footer */
 
@@ -276,6 +410,13 @@ footer {
     .slogan {
         align-content: center;
     }
+    .king-paper {
+        width: 300px;
+        height: 120px;
+        position: absolute;
+        top: -55px;
+        left: 30%;
+    }
   }
 
   @media only screen and (max-width: 425px) {
@@ -283,12 +424,63 @@ footer {
         font-size: 13px;
         align-content: center;
     }
+    .king-paper {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: -55px;
+        left: 28%;
+    }
+    .king-paper .title {
+        position: absolute;
+        font-family: 'thuphap1';
+        font-size: 26px;
+        color: red;
+        top: 18%;
+        left: 20%;
+    }
   }
+
+  @media only screen and (max-width: 375px) {
+    .slogan {
+        font-size: 10px;
+        align-content: center;
+    }
+    .king-paper {
+        width: 170px;
+        height: 80px;
+        position: absolute;
+        top: -40px;
+        left: 28%;
+    }
+    .king-paper .title {
+        position: absolute;
+        font-family: 'thuphap1';
+        font-size: 22px;
+        color: red;
+        top: 19%;
+        left: 19%;
+    }
 
   @media only screen and (max-width: 320px) {
     .slogan {
         font-size: 10px;
         align-content: center;
+    }
+    .king-paper {
+        width: 170px;
+        height: 80px;
+        position: absolute;
+        top: -40px;
+        left: 25%;
+    }
+    .king-paper .title {
+        position: absolute;
+        font-family: 'thuphap1';
+        font-size: 22px;
+        color: red;
+        top: 18%;
+        left: 19%;
     }
   }
 
