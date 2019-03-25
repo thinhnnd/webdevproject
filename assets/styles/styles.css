@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'thuphap1';
+    src: url('/assets/fonts/HL-thufap1-Unicode.ttf')
+}
+
+/*global*/
+body, nav {
+    font-family: "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/assets/img/old-page-bg.jpg');
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* .desktop-nav {
+    background: url('/assets/img/old-style-nav.png') top center no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+} */
+
+/* header */
+.page-wraper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wraper-bg {
+    background: linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('/assets/img/khue-van-cac-main.jpg');
+    background-size: cover;
+ 
+    background-position: center;
+}
+
+/*.wraper-bsg::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-image: linear-gradient(to bottom right,rgba(0,47,75,0.1),rgba(220,66,37,0.7));
+    background-image: linear-gradient(to bottom right,#434343  ,#000); 
+	 opacity: .6;  
+}  */
+
+.outer-wraper {
+    height: 420px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.slogan {
+    font-family: 'thuphap1', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.slogan h1 {
+    margin: 0;
+    line-height: 65px;
+    padding: 17px;
+}
+
+.desktop-nav-wraper {
+    background: url('/assets/img/old-style-nav.png') top center no-repeat;
+    height: 100%;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-join {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.btn-join .btn{
+    padding: 0;
+    color: #fff;
+    background: rgb(179, 50, 51);
+    padding: 20px 5px;
+    font-size: 25px;
+    border: 3px solid rgb(247, 182, 1);
+    text-align: center;
+    line-height: 30px;
+}
+
+.wrap-btn {
+    display: flex;
+}
+
+.btn-join li.first {
+    background-color: rgb(247, 182, 1);
+    border: 3px solid rgb(179, 50, 51);
+}
+
+.btn-join li.second {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.btn-join li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*login-form*/
+
+.login-form {
+    height: 300px;
+    width: 500px;
+}
+
+/* card */
+.nb-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 12px;
+}
+
+.nb-card .nb-card-head {
+    font-size: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nb-card .nb-card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.nb-card-foot {
+    padding-top: 15px;
+}
+
+/* footer */
+
+footer {
+    background-color: #232323;
+    height: 75px;
+    color: #fff;
+    text-align: center;
+}
+
+/*reponsive*/
+
+@media only screen and (max-width: 768px) {
+    .slogan {
+        align-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .slogan {
+        font-size: 13px;
+        align-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .slogan {
+        font-size: 10px;
+        align-content: center;
+    }
+  }
+
