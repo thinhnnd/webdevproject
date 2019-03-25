@@ -32,7 +32,16 @@ li {
 nav {
     /* background: rgba(255,255,255,0.8); */
     background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
+
+section {
+    margin-bottom: 20px;
+}
+
 
 @font-face {
     font-family: 'thuphap1';
@@ -147,6 +156,10 @@ nav.nav-desktop ul.main-nav li a:hover {
     background-image: linear-gradient(to bottom right,#434343  ,#000); 
 	 opacity: .6;  
 }  */
+
+.div-outer {
+    margin-top: 107.58px;
+}
 
 .outer-wraper {
     height: 420px;
@@ -483,4 +496,4 @@ footer {
         left: 19%;
     }
   }
-
+}
