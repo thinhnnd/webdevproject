@@ -228,6 +228,39 @@ li {
     border-top: 1px solid #e5e5e5;
 }
 
+/*main */
+.golden-rank {
+    margin-top: 60px;
+    border: 2px double red;
+    position: relative;
+    height: 500px;
+}
+.king-paper {
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    top: -50px;
+    left: 37%;
+}
+
+.king-paper .title {
+    position: absolute;
+    font-family: 'thuphap1';
+    font-size: 30px;
+    color: red;
+    top: 18%;
+    left: 28%;
+}
+
+.king-paper img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-rank {
+    margin-top: 80px;
+}
+
 /* footer */
 
 footer {
