@@ -1,0 +1,113 @@
+/* select exam */
+
+.main-select-exam {
+    background: #F2E7D3;
+    padding: 20px 0;
+}
+
+.select-test h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.select-test .note {
+    color: red;
+}
+
+.select-test ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px double #B16833;
+    padding: 15px;
+    padding-top: 0;
+    border-spacing: 10pt 20pt;
+    border-radius: 20px;
+}
+
+.select-test ul li {
+    margin-left: 15px;
+}
+
+.select-test a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.select-test ul li .select-exam {
+    padding: 20px 40px;
+    /* padding: 40px 100px; */
+    background-color: #B33233;
+}
+
+/* user-info in exam page */
+.exam-usr-info .avt-name {
+    display: flex;
+}
+.exam-usr-info .avt-name .img-wraper{
+    width: 64px;
+    height: 64px;
+}
+
+.img-wraper img {
+    width: 100%;
+}
+
+.exam-usr-info .name-info .name{
+    color: rgb(98, 14, 235);
+    font-weight: 660;
+}
+
+.h-blue {
+    color: rgb(98, 14, 235);
+
+
+}
+
+.em {
+    font-weight: 550;
+}
+
+/* exam page */
+
+.exam {
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.answer label {
+    display: block;
+}
+
+.timer-area {
+    font-weight: bold;
+}
+
+.timer {
+    color: red;
+    font-size: 40px;
+    font-weight: 550;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag a{
+    text-decoration: none;
+    color: #000;
+}
+
+#flag-list td {
+    padding: 2px;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
+

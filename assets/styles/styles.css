@@ -4,11 +4,29 @@
 }
 
 /*global*/
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+   *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+main {
+    min-height: 100vh;
+}
+
 body, nav {
-    font-family: "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
     background: url('../img/old-page-bg.jpg');
+    position: relative;
 }
 
 ul {
@@ -21,14 +39,14 @@ li {
     list-style-type: none;
 }
 
-/* .desktop-nav {
-    background: url('/assets/img/old-style-nav.png') top center no-repeat;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-} */
+.mg-top-0{
+    margin-top: 0 !important;
+}
 
-/* header */
+.mg-top-20 {
+    margin-top: 20px;
+}
+
 nav {
     /* background: rgba(255,255,255,0.8); */
     background: rgba(0,0,0,0.8);
@@ -38,9 +56,6 @@ nav {
     top: 0;
 }
 
-section {
-    margin-bottom: 20px;
-}
 
 
 @font-face {
@@ -58,11 +73,11 @@ section {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    margin: 5px 0;
+    padding: 5px 0;
 }
 
 .logo {
-    width: 75px;
+    width: 64px;
 
 }
 
@@ -110,6 +125,7 @@ nav.nav-desktop ul.main-nav li a:hover {
     transition: .5s;
     text-decoration: none;
 }
+
 .menu-trigger {
     display: none;
     margin-right: 1.5em;
@@ -121,13 +137,14 @@ nav.nav-desktop ul.main-nav li a:hover {
     text-decoration: none;
 }
 
-
+.exam-nav {
+    position: initial;
+}
 
 .web-name {
     color: #fff;
     font-size: 12px;
     font-family: 'thuphap1', Arial, Helvetica, sans-serif;
-
 }
 
     /*header bg */
@@ -145,22 +162,8 @@ nav.nav-desktop ul.main-nav li a:hover {
     background-position: center;
 }
 
-
-
-/*.wraper-bsg::before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    background-image: linear-gradient(to bottom right,rgba(0,47,75,0.1),rgba(220,66,37,0.7));
-    background-image: linear-gradient(to bottom right,#434343  ,#000); 
-	 opacity: .6;  
-}  */
-
 .div-outer {
-    margin-top: 121.58px;
+    margin-top: 111.5px;
 }
 
 .outer-wraper {
@@ -414,12 +417,56 @@ nav.nav-desktop ul.main-nav li a:hover {
 
 footer {
     background-color: #232323;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
     height: 75px;
     color: #fff;
     text-align: center;
 }
 
 /*reponsive*/
+
+
+@media only screen and (max-width: 991px) {
+    nav.nav-desktop ul li a {
+    
+        font-size: 14px;
+    }
+    .slogan {
+        align-content: center;
+    }
+    .king-paper {
+        width: 300px;
+        height: 120px;
+        position: absolute;
+        top: -55px;
+        left: 30%;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .exam-manager {
+        position: fixed !important;
+        bottom: 0;
+        right: 0;
+        z-index: 101;
+        background: rgba(255, 255, 255, 0.7);
+        width: initial !important;
+    }
+    .exam-manager .btn-close {
+        border: 1px solid tomato;
+        color: #fff;
+        background: tomato;
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        border-radius: 50%;
+        padding: 0 5px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .slogan {
@@ -436,9 +483,9 @@ footer {
     .menu-bar {
         display: none;
     }
-  }
-
-  @media only screen and (max-width: 425px) {
+}
+  
+@media only screen and (max-width: 425px) {
     .slogan {
         font-size: 13px;
         align-content: center;
@@ -458,9 +505,9 @@ footer {
         top: 18%;
         left: 20%;
     }
-  }
+}
 
-  @media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .slogan {
         font-size: 10px;
         align-content: center;
@@ -481,7 +528,10 @@ footer {
         left: 19%;
     }
 
-  @media only screen and (max-width: 320px) {
+  
+}
+
+@media only screen and (max-width: 320px) {
     .slogan {
         font-size: 10px;
         align-content: center;
@@ -501,5 +551,4 @@ footer {
         top: 18%;
         left: 19%;
     }
-  }
 }
