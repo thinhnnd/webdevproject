@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/tauchuong/logo.png" width="70px" height="70px" alt="">
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/tauchuong/logo.png" width="70px" height="70px" alt="">
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search"
+                                    placeholder="Tìm kiếm..." />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/tauchuong/logo.png" alt="User" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">admin</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/tauchuong/logo.png" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">admin</a>
+                                                    </h5>
+                                                    <span class="email">admin@abc.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Quản lý user</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-file-text"></i>Quản lý đề thi</a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Tổng Quan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>61</h2>
+                                                <span>Đang hoạt động</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-file-text"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>32</h2>
+                                                <span>Đề thi</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-assignment-check"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>138</h2>
+                                                <span>Lượt thi</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>5</h2>
+                                                <span>Thủ khoa</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h2 class="title-1 m-b-25">Ranking</h2>
+                                <div class="table-data__tool">
+                                    <div class="table-data__tool-left">
+                                        <div class="rs-select2--light rs-select2--md">
+                                            <select class="js-select2" name="property">
+                                                <option value="all">All Properties</option>
+                                                <option selected="selected" value="time">Ngày thi</option>
+                                                <option value="rank">Rank</option>
+                                                <option value="score">Tổng điểm</option>
+                                            </select>
+                                            <div class="dropDownSelect2"></div>
+                                        </div>
+                                        <div class="rs-select2--light rs-select2--sm">
+                                            <select class="js-select2" name="order">
+                                                <option selected="selected">All</option>
+                                                <option value="">3 ngày</option>
+                                                <option value="">7 ngày</option>
+                                            </select>
+                                            <div class="dropDownSelect2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-data__tool-right">
+                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small">
+                                            <i class="zmdi  zmdi-filter-list"></i>Filter</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table--no-card m-b-40">
+
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>Ngày thi</th>
+                                                <th>User ID</th>
+                                                <th>Họ Tên</th>
+                                                <th>Quê quán</th>
+                                                <th class="text-right">Lần thi</th>
+                                                <th class="text-right">Tổng Điểm</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>100398</td>
+                                                <td>Nguyễn Hoàng Quân</td>
+                                                <td>Lâm Đồng</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-28 01:22</td>
+                                                <td>100397</td>
+                                                <td>Đỗ Như Quang</td>
+                                                <td>Đăk Lăk</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">98</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>100396</td>
+                                                <td>Phạm Thành Văn</td>
+                                                <td>Quảng Ngãi</td>
+                                                <td class="text-right">2</td>
+                                                <td class="text-right">97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-26 23:06</td>
+                                                <td>100395</td>
+                                                <td>Lữ Văn Liêm</td>
+                                                <td>Hà Tĩnh</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">95</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-25 19:03</td>
+                                                <td>100393</td>
+                                                <td>Quan Văn Trường</td>
+                                                <td>Quảng Ninh</td>
+                                                <td class="text-right">3</td>
+                                                <td class="text-right">90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>100392</td>
+                                                <td>Phạm Xuân Ẩn</td>
+                                                <td>Quảng Ngãi </td>
+                                                <td class="text-right">6</td>
+                                                <td class="text-right">89</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-24 19:10</td>
+                                                <td>100391</td>
+                                                <td>Bình Xuân Thanh</td>
+                                                <td>Bình Định</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">87</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-22 00:43</td>
+                                                <td>100393</td>
+                                                <td>Doãn Chí Bình</td>
+                                                <td>Đà Lạt</td>
+                                                <td class="text-right">3</td>
+                                                <td class="text-right">80</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="user-data__footer">
+                                        <button class="au-btn au-btn-load">Thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="title-1">Đề Thi</h2>
+                                <div class="table-data__tool-right">
+                                    <button
+                                        class="au-btn au-btn-icon au-btn--green au-btn--small btn btn-secondary mb-1"
+                                        data-toggle="modal" data-target="#create">
+                                        <i class="zmdi  zmdi-plus-box"></i>Thêm mới</button>
+                                </div>
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <th>Mã đề</th>
+                                                <th>Tên đề</th>
+                                                <th>Mô tả</th>
+                                                <th>Ngày tạo</th>
+                                                <th>Trạng thái</th>
+                                                <th>Mức độ</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--denied">Denied</span>
+                                                </td>
+                                                <td>Dễ</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--denied">Denied</span>
+                                                </td>
+                                                <td>Trung Bình</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--process">Approved</span>
+                                                </td>
+                                                <td>Dễ</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--process">Approved</span>
+                                                </td>
+                                                <td>Khó</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--process">Approved</span>
+                                                </td>
+                                                <td>Trung Bình</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>DE001</td>
+                                                <td>
+                                                    <span class="block-email">Đề 1</span>
+                                                </td>
+                                                <td class="desc">Toán học - Hóa học - Vật lý</td>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>
+                                                    <span class="status--denied">Denied</span>
+                                                </td>
+                                                <td>Dễ</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="View">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>WebDev Hackathon - thinhnnd & thupx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="largeModalLabel">Thêm đề thi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body card-block">
+                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label for="text-input" class=" form-control-label">Mã đề</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type="text" id="text-input" name="text-input" placeholder="Mã đề thi"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label for="text-input" class=" form-control-label">Tên đề</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type="text" id="text-input" name="text-input"
+                                                placeholder="Tên đề thi" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label for="textarea-input" class=" form-control-label">Mô tả</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <textarea name="textarea-input" id="textarea-input" rows="9"
+                                                placeholder="Mô tả đề thi" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label for="select" class=" form-control-label">Trạng thái</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <select name="select" id="select" class="form-control">
+                                                <option value="0">Vui lòng chọn</option>
+                                                <option value="approved">Approved</option>
+                                                <option value="denied">Denied</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label class=" form-control-label">Độ khó</label>
+                                        </div>
+                                        <div class="col col-md-9">
+                                            <div class="form-check">
+                                                <div class="radio">
+                                                    <label for="radio1" class="form-check-label ">
+                                                        <input type="radio" id="radio1" name="radios" value="option1"
+                                                            class="form-check-input">Dễ
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label for="radio2" class="form-check-label ">
+                                                        <input type="radio" id="radio2" name="radios" value="option2"
+                                                            class="form-check-input">Trung Bình
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label for="radio3" class="form-check-label ">
+                                                        <input type="radio" id="radio3" name="radios" value="option3"
+                                                            class="form-check-input">Khó
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
+                                            <label for="text-input" class=" form-control-label">Số lượng câu hỏi</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type="number" id="text-input" name="text-input"
+                                                placeholder="Số lượng câu hỏi" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
