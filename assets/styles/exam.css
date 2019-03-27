@@ -110,4 +110,19 @@
     border: 1px solid black;
     text-align: center;
 }
+        /* Question Items */
+.question-item {
+    border-bottom: 1px solid grey;
+    padding: 20px 10px;
+}
 
+.q-type {
+    /* width: 480px;
+    height: 360px; */
+    width: 100%;
+}
+
+.q-type video,
+.q-type img {
+    width: 100%;
+}
