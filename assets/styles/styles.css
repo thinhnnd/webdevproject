@@ -583,28 +583,49 @@ footer {
 
     }
 
+    .timer-area .timer{
+        font-size: 20px;
+    }
+
     .exam-manager {
         position: fixed !important;
         bottom: 0;
         right: 0;
-        z-index: 101;
+        z-index: 200;
         background: rgba(255, 255, 255, 0.7);
-        width: initial !important;
+        width: 270px;
+        transition: right 0.4s ease-in; 
     }
+
+    .showing {
+        right: 0;
+    }
+
+    .hidden-c {
+        right: -270px;
+    }
+
+    
+    
     .exam-manager .btn-close {
         display: initial;
     }
 
     .exam-manager .btn-close {
-        border: 1px solid tomato;
         color: #fff;
-        background: tomato;
+        background: #0078D7;
         position: absolute;
-        top: -10px;
-        left: -5px;
-        border-radius: 50%;
-        padding: 0 5px;
+        top: 0px;
+        right: 0px;
+        width: 300px;
+        height: 30px;
+        border-radius: 50px 0 0 50px;
     }
+
+    .exam-manager .timer-area {
+       margin-top: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -618,9 +639,6 @@ footer {
         
     }
 
-    .menu-bar {
-        /* display: none; */
-    }
 }
   
 @media only screen and (max-width: 425px) {

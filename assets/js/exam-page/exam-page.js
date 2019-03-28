@@ -316,8 +316,22 @@ $(document).ready(function(){
         checkedFlag(order);
       });  
     $('#submit-test').click(submitExam);
+
     $('#close-manager').click(()=>{
-        $('.exam-manager').addClass('hidden');
+        let isShowing =$('.exam-manager').hasClass('showing');
+        let isHidden = $('.exam-manager').hasClass('hidden-c')
+        if(isHidden===false && isShowing === false) {
+            $('.exam-manager').addClass('hidden-c');
+        }
+        else if( isShowing === true) {
+            $('.exam-manager').removeClass('showing');
+            $('.exam-manager').addClass('hidden-c');
+
+        }
+        else if(isHidden === true){
+            $('.exam-manager').removeClass('hidden-c');
+            $('.exam-manager').addClass('showing');
+        }
     });
 });
 
