@@ -95,7 +95,7 @@
 
 .timer {
     color: red;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 550;
 }
 
@@ -111,8 +111,12 @@
     color: #000;
 }
 
+table#flag-list {
+    table-layout: fixed;
+    width: 100%;
+}
 #flag-list td {
-    padding: 2px;
+    width: 10%;
     justify-content: center;
     background: #fff;
     border: 1px solid black;

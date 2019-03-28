@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 function createFlagForm() {
     let table = '';
-    let num = 40;
+    let num = 13;
     let row = 0;
     if (num / 10 >= Math.floor(num / 10)) {
         row = Math.floor(num / 10) + 1;
