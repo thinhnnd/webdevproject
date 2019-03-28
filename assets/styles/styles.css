@@ -295,7 +295,6 @@ nav .menu-bar {
     padding: 0;
     color: #fff;
     background: rgb(179, 50, 51);
-    padding: 20px 5px;
     font-size: 25px;
     border: 3px solid rgb(247, 182, 1);
     text-align: center;
@@ -309,6 +308,7 @@ nav .menu-bar {
 .btn-join li.first {
     background-color: rgb(247, 182, 1);
     border: 3px solid rgb(179, 50, 51);
+
 }
 
 .btn-join li.second {
@@ -317,8 +317,11 @@ nav .menu-bar {
 }
 
 .btn-join li a {
+    display: block;
     color: #fff;
     text-decoration: none;
+    padding: 20px 5px;
+
 }
 
 /*login-form*/

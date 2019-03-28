@@ -7,7 +7,7 @@ $(document).ready(() =>{
             i = 0;
         changeBg(i);
         i++;
-    }, 5000);
+    }, 10000);
 });
 
 let bgLink = [

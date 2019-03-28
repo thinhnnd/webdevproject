@@ -183,3 +183,20 @@ table#flag-list {
   .question-item:hover::after, .question-item:focus::after {
     opacity: 1;
   }
+
+  .submit-area {
+      justify-self: center;
+      margin-top: 20px;
+  }
+
+  #submit-test {
+      justify-self: center;
+      background: #B33233;
+      color: #fff;
+        display: block;
+        width: 150px;
+     padding: 10px 30px;
+     margin: auto;
+     text-align: center;
+     font-size: 20px;
+  }
