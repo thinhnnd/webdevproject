@@ -225,7 +225,7 @@ nav .menu-bar {
 }
 
 .outer-wraper {
-    height: 420px;
+    height: 350px;
     display: flex;
     position: relative;
     justify-content: flex-end;
