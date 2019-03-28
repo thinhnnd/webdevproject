@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/partials.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css" />
@@ -25,18 +26,18 @@
                         <div class="logo">
                             <img src="../assets/img/resources/logo.png" alt="">
                         </div>
-                        <div class="web-name">
+                        <div class="web-name noselect">
                             Kỳ thi Hương Quốc gia
                         </div>
                     </a>
                 </div>
-                <div class="menu-bar">
-                    <ul class="main-nav">
+                <div class="menu-bar noselect">
+                    <ul class="main-nav ">
                         <li>
                             <a class="main-nav__home img-rounded" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="main-nav__rank img-rounded" href="#golden-rank"> Rank</a>
+                            <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
                         </li>
                         <li>
                             <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
@@ -51,12 +52,36 @@
                             <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
                         </li>
                     </ul>
+                    <ul id="mySidenav" class="main-nav-mob">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <li>
+                                <a class="main-nav__home img-rounded" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__exam img-rounded" href="#">Vào thi</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                </div>
+                <div id="btn-open-menu" class="btn-menu">
+                    <img src="./assets/icons/three-dot-menu.png">
                 </div>
             </div>
         </nav>
         <div class="div-outer">
             <div class="container outer-wraper">
-                <div class="slogan">
+                <div class="slogan noselect">
                     <h1>Hiền</h1>
                     <h1>tài</h1>
                     <h1>là</h1>
@@ -189,6 +214,14 @@
     <footer>
         Powered by thinhnnd & thupx
     </footer>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="assets/js/exam-page/mobile-menu-close.js"></script>
+    <script src="./assets/js/navigation.js">
+    </script>
+    
 </body>
 
 </html>

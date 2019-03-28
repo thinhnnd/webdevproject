@@ -31,8 +31,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="menu-bar">
-                    <ul class="main-nav noselect">
+                <div class="menu-bar noselect">
+                    <ul class="main-nav">
                         <li>
                             <a class="main-nav__home img-rounded" href="#">Home</a>
                         </li>
@@ -53,30 +53,30 @@
                         </li>
                     </ul>
                     <ul id="mySidenav" class="main-nav-mob">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <li>
-                            <a class="main-nav__home img-rounded" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__exam img-rounded" href="#">Vào thi</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
-                        </li>
-                    </ul>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <li>
+                                <a class="main-nav__home img-rounded" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__exam img-rounded" href="#">Vào thi</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
+                            </li>
+                        </ul>
                 </div>
                 <div id="btn-open-menu" class="btn-menu">
-                    <img src="./assets/icons/three-dot-menu.png">
-                </div>
+                        <img src="./assets/icons/three-dot-menu.png">
+                    </div>
             </div>
         </nav>
     </div>
@@ -118,51 +118,47 @@
                     <div class="col-lg-4">
                         <div class="contact-us">
                             <div class="h-blue">
-                                Liên hệ
+                                Xếp hạng
                             </div>
                             <div>
                                 <ul>
-                                    <li>Ngày sinh: 09/11/2004</li>
-                                    <li>Điện thoại:0211987232</li>
-                                    <li>Email: anhquyen098@gmail.com</li>
+                                    <li><span class="em">Hạng quốc gia: </span> 12</li>
+                                    <li><span class="em">Hạng địa phương: </span>1</li>
                                 </ul>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="row exam-border">
-                    <div class="col-lg-9 col-md-12 exam">
-
-                        <div id="questions-place">
-
-                        </div>
-                    </div>
-                    <div class="col-lg-3 ">
-                        <div class="exam-manager">
-                            <div id="close-manager" class="btn-close">x </div>
-                            <div class="timer-area">
-                                <span>Thời gian: </span>
-                                <span id="clock" class="timer"></span>
+                <div class="row exam-border" style="height: 100%">
+                    <div class="col-12">
+                        <div class="my-result">
+                            <div style="text-align: center; font-size: 30px; color: red;">
+                                Kết quả
                             </div>
-                            <div class="timer-area test-id">
-                                <span>Bộ đề: </span>
-                                <span id="test-id" class="id">981</span>
-                            </div>
-                            <div class="flag">
-                                <h5>Quản lý câu hỏi</h5>
-                                <table id="flag-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mã đề</th>
+                                        <th>Ngày thi</th>
+                                        <th>Số câu đúng</th>
+                                        <th>Tổng điểm</th>
+                                    </tr>
 
-                                </table>
-                            </div>
-                        </div>
-
-                        <div>
-                            <button id="submit-test">Nộp bài</button>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>991</td>
+                                        <td>15:30:25 23/08/2018</td>
+                                        <td>30/50</td>
+                                        <td>7.2</td>
+                                        <th><button>Xem lại</button></th>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
@@ -170,10 +166,10 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
     <!-- <script src="assets/js/exam-page/countdown.js"></script>
-  <script src="assets/js/exam-page/load-flag.js"></script> -->
-    <script src="assets/js/exam-page/exam-page.js"></script>
-    <script src="./assets/js/navigation.js">
-    </script>
+  <script src="assets/js/exam-page/load-flag.js"></script>
+  <script src="assets/js/exam-page/test-load.js"></script> -->
+  <script src="./assets/js/navigation.js">
+  </script>
     <footer>
         Powered by thinhnnd & thupx
     </footer>

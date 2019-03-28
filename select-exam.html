@@ -30,13 +30,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="menu-bar">
+                <div class="menu-bar noselect">
                     <ul class="main-nav">
                         <li>
                             <a class="main-nav__home img-rounded" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="main-nav__rank img-rounded" href="#"> Rank</a>
+                            <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
                         </li>
                         <li>
                             <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
@@ -51,6 +51,30 @@
                             <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
                         </li>
                     </ul>
+                    <ul id="mySidenav" class="main-nav-mob">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li>
+                            <a class="main-nav__home img-rounded" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__exam img-rounded" href="#">Vào thi</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="btn-open-menu" class="btn-menu">
+                    <img src="./assets/icons/three-dot-menu.png">
                 </div>
             </div>
         </nav>
@@ -92,7 +116,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="contact-us">
-                            <div  class="h-blue">
+                            <div class="h-blue">
                                 Liên hệ
                             </div>
                             <div>
@@ -225,12 +249,12 @@
                         </a>
                     </li>
                     <li>
-                            <a href="#">
-                                <div class="nb-card select-exam">
-                                    Mã đề <strong>921</strong>
-                                </div>
-                            </a>
-                        </li>
+                        <a href="#">
+                            <div class="nb-card select-exam">
+                                Mã đề <strong>921</strong>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </div>
@@ -238,6 +262,10 @@
     <footer>
         Powered by thinhnnd & thupx
     </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/js/navigation.js">
+    </script>
 </body>
 
 </html>
