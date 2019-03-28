@@ -184,7 +184,7 @@ nav .menu-bar {
 }
 
 .wraper-bg {
-    background-image:  linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('../img/backgrounds-wraper/bg-01-khue-van-cac.jpg');
+    background-image:  linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('../img/backgrounds-wraper/bg-01-khue-van-cac-2.png');
     background-position: center center;
     /* transition: background-image 1000ms linear infinite; */
     background-size: cover;
@@ -195,17 +195,17 @@ nav .menu-bar {
     transition: background-image 1s ease-in-out;
 }
 
-/* #wraper-animation {
+#wraper-animation {
     animation: slide 10s linear infinite alternate;
     -webkit-animation: slide 10s linear infinite alternate;
-} */
+}
 
 @keyframes slide {
     from { 
         background-position: 0 0; 
     }
     to { 
-        background-position: 100 0;
+        background-position: 50 0;
     }
 
 
@@ -215,7 +215,7 @@ nav .menu-bar {
         background-position: 0 0; 
     }
     to { 
-        background-position: 100% 0;
+        background-position: 50 0;
     }
 
 }
@@ -225,7 +225,7 @@ nav .menu-bar {
 }
 
 .outer-wraper {
-    height: 350px;
+    height: 360px;
     display: flex;
     position: relative;
     justify-content: flex-end;
