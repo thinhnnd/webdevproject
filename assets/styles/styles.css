@@ -63,7 +63,7 @@ li {
 nav {
     /* background: rgba(255,255,255,0.8); */
     /* background: rgba(0,0,0,0.8); */
-    background: rgba(0,0,0);
+    background: rgba(0,0,0, 1);
 
     /* position: fixed; */
     width: 100%;
@@ -184,10 +184,40 @@ nav .menu-bar {
 }
 
 .wraper-bg {
-    background: linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('../img/khue-van-cac-main.jpg');
+    background-image:  linear-gradient(to bottom right,rgba(0,47,75,0.7),rgba(220,66,37,0.7)), url('../img/backgrounds-wraper/bg-01-khue-van-cac.jpg');
+    background-position: center center;
+    /* transition: background-image 1000ms linear infinite; */
     background-size: cover;
- 
-    background-position: center;
+
+}
+
+#wraper-animation {
+    transition: background-image 1s ease-in-out;
+}
+
+/* #wraper-animation {
+    animation: slide 10s linear infinite alternate;
+    -webkit-animation: slide 10s linear infinite alternate;
+} */
+
+@keyframes slide {
+    from { 
+        background-position: 0 0; 
+    }
+    to { 
+        background-position: 100 0;
+    }
+
+
+}
+@-webkit-keyframes slide {
+    from { 
+        background-position: 0 0; 
+    }
+    to { 
+        background-position: 100% 0;
+    }
+
 }
 
 .div-outer {
@@ -203,7 +233,7 @@ nav .menu-bar {
 }
 
 .outer-wraper-100vh {
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .justify-content-center {
@@ -283,7 +313,7 @@ nav .menu-bar {
 }
 
 .btn-join li.second {
-    margin-top: 5px;
+    margin: 5px 0;
     width: 100%;
 }
 
@@ -408,8 +438,10 @@ nav .menu-bar {
     width: 300px;
     height: 120px;
     position: absolute;
-    top: -50px;
-    left: 37%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -54px;
 }
 
 .king-paper .title {
@@ -417,8 +449,10 @@ nav .menu-bar {
     font-family: 'thuphap1';
     font-size: 30px;
     color: red;
-    top: 18%;
-    left: 28%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 14px;
 }
 
 .king-paper img {
@@ -547,9 +581,7 @@ footer {
     .king-paper {
         width: 300px;
         height: 120px;
-        position: absolute;
-        top: -55px;
-        left: 30%;
+
     }
 
     .exam-manager {
@@ -584,8 +616,7 @@ footer {
         width: 300px;
         height: 120px;
         position: absolute;
-        top: -55px;
-        left: 30%;
+        
     }
 
     .menu-bar {
@@ -601,17 +632,14 @@ footer {
     .king-paper {
         width: 200px;
         height: 100px;
-        position: absolute;
-        top: -55px;
-        left: 28%;
+
     }
     .king-paper .title {
         position: absolute;
         font-family: 'thuphap1';
-        font-size: 26px;
+        font-size: 22px;
         color: red;
-        top: 18%;
-        left: 20%;
+        top: 20px;
     }
 }
 
@@ -624,16 +652,14 @@ footer {
         width: 170px;
         height: 80px;
         position: absolute;
+
         top: -40px;
-        left: 28%;
     }
     .king-paper .title {
         position: absolute;
-        font-family: 'thuphap1';
-        font-size: 22px;
+        font-size: 18px;
         color: red;
-        top: 19%;
-        left: 19%;
+        top: 18px;
     }
 
   
@@ -647,16 +673,10 @@ footer {
     .king-paper {
         width: 170px;
         height: 80px;
-        position: absolute;
-        top: -40px;
-        left: 25%;
+ 
     }
     .king-paper .title {
         position: absolute;
-        font-family: 'thuphap1';
-        font-size: 22px;
-        color: red;
-        top: 18%;
-        left: 19%;
+
     }
 }
