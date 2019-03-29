@@ -103,8 +103,8 @@ nav {
 }
 
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48x;
 }
 
 .logo img {
@@ -134,15 +134,15 @@ nav .menu-bar {
 }
 
 .menu-bar li a {
-    
     font-family: 'thuphap1';
-    padding: 10px 20px;
+    padding: 5px 15px;
     text-transform: uppercase;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     transition: .5s;
-    width: 100px;
+    /* width: 100px; */
+    font-size: 14px;
 }
 
 .menu-bar li a:hover {
@@ -484,6 +484,20 @@ nav .menu-bar {
     height: 30px;
 }
 
+.user-rank table tr.first {
+    color: red;
+    font-weight: 650;
+}
+
+.user-rank table tr.second {
+    color: blue;
+    font-weight: 600;
+}
+
+.user-rank table tr.third {
+    color: rgb(1, 78, 1);
+    font-weight: 500;
+}
 
 .user-rank tr:nth-child(2n), 
 .my-result tr:nth-child(2n){
