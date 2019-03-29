@@ -454,7 +454,7 @@ nav .menu-bar {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 14px;
+    top: 30px;
 }
 
 .king-paper img {

@@ -1,5 +1,6 @@
 function addQuestion() {
-    let made = localStorage.getItem(localStorage.key(0));
+    // let made = localStorage.getItem(localStorage.key(0));
+    let made = 10;
     if (!made) {
         $('#question-place').html(`<h1 class="text-center"> Vui lòng chọn mã đề để thêm câu hỏi !  </h1>`);
         $('.save-question').remove();
@@ -7,9 +8,10 @@ function addQuestion() {
     else {
         $('#question-place').append(`<h1 class="text-center"> Thêm câu hỏi cho đề ${localStorage.key(0)}  </h1>`);
         for (var i = 0; i < made; i++) {
-            var questionFmt = `<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2" >
+            var questionFmt = `<div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 
-        <div class="input-group" style="float:left;padding: 10px">
+        <div class="input-group card card-question">
 
             <div class="form-group">
                 <label for="textarea" class="col-sm-10 control-label question-num">Câu hỏi ${i + 1} </label>
@@ -17,32 +19,42 @@ function addQuestion() {
             </div>
 
             <div class="input-group">
-                <label class="input-group-btn">
-                    <span class="btn btn-primary btn-upload">Browse&hellip; <input type="file"
-                            style="display: none;" multiple></span>
-                </label>
-                <input type="text" class="form-control" readonly>
+                <label for="sel1">Loại câu hỏi:</label>
+                <select class="form-control">
+                  <option>Văn bản</option>
+                  <option>Hình ảnh</option>
+                  <option>Âm thanh</option>
+                  <option>Video</option>
+                  <option>Video Youtube</option>
+                  <option>Video Google Drive</option>
+                </select>
+                <input type="file" value="Upload"> 
+                <span>Hoặc URL</span>
+                <input type="text" class="form-control" >
             </div>
-            <hr>
-            <div class="radio">
-                <label><input type="radio" name="${i + 1}_optradio" checked>A</label>
+            <div class="answer-4-value">
+                <h5>Điền 4 đáp án và chọn 1 đáp án đúng</h5>
+                <div class="radio">
+                    <label><input type="radio" name="Q${i + 1}" checked>A</label>
 
-                <input type="text" name="${i + 1}_a" class="form-control" value="" pattern="" title="">
+                    <input type="text" name="Q${i + 1}" class="form-control" value="" pattern="" title="">
 
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="${i + 1}_optradio">B</label>
-                <input type="text" name="${i + 1}_b" class="form-control" value="" pattern="" title="">
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="${i + 1}_optradio">C</label>
-                <input type="text" name="${i + 1}_c" class="form-control" value="" pattern="" title="">
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="${i + 1}optradio">D</label>
-                <input type="text" name="${i + 1}_d" class="form-control" value="" pattern="" title="">
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="Q${i + 1}">B</label>
+                    <input type="text" name="Q${i + 1}" class="form-control" value="" pattern="" title="">
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="Q${i + 1}">C</label>
+                    <input type="text" name="Q${i + 1}" class="form-control" value="" pattern="" title="">
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="Q${i + 1}">D</label>
+                    <input type="text" name="Q${i + 1}" class="form-control" value="" pattern="" title="">
+                </div>
             </div>
         </div>
+    </div>
     </div>
 `;
             $('#question-place').append(questionFmt);

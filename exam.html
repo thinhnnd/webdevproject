@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bài thi | Kỳ thi hương Quốc gia</title>
+
+    <link rel="stylesheet" href="./bower_components/bootstrap-4.1/bootstrap.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/partials.css">
     <link rel="stylesheet" href="./assets/styles/exam.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css" /> -->
     <link rel="stylesheet" href="/assets/styles/font-face.css">
 </head>
 
@@ -20,22 +23,25 @@
     <!-- div maker -->
     <div>
         <!--Desktop Nav bar-->
-        <nav class="nav-desktop exam-nav">
+        <nav class="nav-desktop ">
             <div class="container">
                 <div class="logo-area">
                     <a href="./index.html">
                         <div class="logo">
-                            <img src="../assets/img/resources/logo.png" alt="">
+                            <img src="./assets/img/resources/logo.png" alt="">
                         </div>
                         <div class="web-name noselect">
                             Kỳ thi Hương Quốc gia
                         </div>
                     </a>
                 </div>
-                <div class="menu-bar">
-                    <ul class="main-nav noselect">
+                <div class="menu-bar noselect">
+                    <ul class="main-nav ">
                         <li>
-                            <a class="main-nav__home img-rounded" href="#">Home</a>
+                            <a class="main-nav__home img-rounded" href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="main-nav__exam img-rounded" href="./select-exam.html">Vào thi</a>
                         </li>
                         <li>
                             <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
@@ -46,34 +52,33 @@
                         <li>
                             <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
                         </li>
-                        <li>
-                            <a class="main-nav__exam img-rounded" href="./exam.html">Vào thi</a>
-                        </li>
+
                         <li>
                             <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
                         </li>
                     </ul>
                     <ul id="mySidenav" class="main-nav-mob">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <li>
-                            <a class="main-nav__home img-rounded" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__exam img-rounded" href="./exam.html">Vào thi</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
-                        </li>
-                    </ul>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <li>
+                                <a class="main-nav__home img-rounded" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__exam img-rounded" href="./select-exam.html">Vào thi</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__rank img-rounded" href="/index.html#golden-rank"> Rank</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__lib img-rounded" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="main-nav__event img-rounded" href="#"> Sự kiện</a>
+                            </li>
+
+                            <li>
+                                <a class="main-nav__contact img-rounded " href="#">Liên hệ</a>
+                            </li>
+                        </ul>
                 </div>
                 <div id="btn-open-menu" class="btn-menu">
                     <img src="./assets/icons/three-dot-menu.png">
@@ -89,7 +94,7 @@
                         <div class="avt-name">
                             <div class="avt">
                                 <div class="img-wraper">
-                                    <img src="/assets/img/user/icons8-customer-64.png" />
+                                    <img src="./assets/img/user/icons8-customer-64.png" />
                                 </div>
                             </div>
                             <div class="name-info ">
@@ -175,12 +180,12 @@
             </div>
         </div>
     </main>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
 
-    <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+    <script src="./bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
     <!-- <script src="assets/js/exam-page/countdown.js"></script>
-  <script src="assets/js/exam-page/load-flag.js"></script> -->
-    <script src="assets/js/exam-page/exam-page.js"></script>
+  <script src="assets/js/exam-page/load-flag.js"></script> -->  
+    <script src="./assets/js/exam-page/exam-page.js"></script>
     <script src="./assets/js/navigation.js">
     </script>
     <footer>
