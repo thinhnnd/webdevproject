@@ -27,7 +27,7 @@ function createFlagForm() {
 
 
 function countDown() {
-    $('#clock').countdown('2019/03/30 23:59:56')
+    $('#clock').countdown('2019/04/5 23:59:56')
         .on('update.countdown', function (event) {
             var format = '%H:%M:%S';
             if (event.offset.totalDays > 0) {

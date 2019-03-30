@@ -2,7 +2,6 @@
 
 .main-select-exam {
     background: #F2E7D3;
-    padding: 20px 0;
 }
 
 .select-test h3{
@@ -44,7 +43,7 @@
 
 /* user-info in exam page */
 .exam-usr-info {
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .exam-usr-info .avt-name {
     display: flex;
@@ -82,7 +81,7 @@
 
 .exam {
     overflow-y: scroll;
-    height: 700px;
+    height: calc(100vh);
 }
 
 .answer label {

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trang quản trị | Kỳ thi hương quốc gia</title>
     <link rel="stylesheet" href="./bower_components/bootstrap-4.1/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./bower_components/font-awesome-5/css/fontawesome-all.min.css" />
     <link href="./assets/styles/web-admin.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+    
 </head>
 
 <body>
-    <div class="my-container">
+    <header class="my-container">
         <div class="child header">
             <div class="left-bar">
                 <div class="logo-area show-desktop-only">
@@ -59,15 +59,13 @@
             </div>
         </div>
         <div class="child app-main">
-            <div id="left-menu" class="child menu showing-slide">
+            <div id="left-menu" class="child menu">
                 <ul>
                     <li><a href="./dashboard.html"><i class="fas fa-bell"></i>Dashboard</a> </li>
                     <!-- <li><i class="fas fa-plus-circle"></i>Tạo đề thi</li> -->
                     <li><a href="./exam-management.html"><i class="fas fa-list-alt"></i>Quản lý đề thi</a></li>
-                    <li><i class="fas fa-user"></i>Danh sách thí sinh</li>
-                    <li><i class="fas fa-bell"></i>Thông báo</li>
-                    <li><i class="fas fa-running"></i>Khác</li>
-
+                    <li><a href="#"><i class="fas fa-user"></i>Danh sách thí sinh</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i>Thông báo</a></li>
                 </ul>
             </div>
             <div id="content" class="child content">
@@ -246,8 +244,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </header>
+
     <div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">

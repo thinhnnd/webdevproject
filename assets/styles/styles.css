@@ -540,6 +540,7 @@ footer {
 @media only screen and (max-width: 991px) {
     /* --- header ----- */
         /* nav */
+    
     nav.nav-desktop ul li a {
     
         font-size: 14px;
@@ -612,7 +613,12 @@ footer {
         background: rgba(255, 255, 255, 0.7);
         width: 270px;
         transition: right 0.4s ease-in; 
+        padding: 15px;
     }
+
+    .exam-manager {
+        right: -270px;
+    }   
 
     .showing {
         right: 0;
@@ -620,9 +626,7 @@ footer {
 
     .hidden-c {
         right: -270px;
-    }
-
-    
+    } 
     
     .exam-manager .btn-close {
         display: initial;
