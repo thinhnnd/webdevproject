@@ -26,7 +26,7 @@ $(document).ready(() =>{
             i = 0;
         changeBg(i, picArr, linearCode, sizeAndPosition);
         i++;
-    }, 2000);
+    }, 8000);
 });
 
 
